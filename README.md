@@ -20,7 +20,7 @@ You can run the application using Android Studio and an Android emulator. Altern
    
 2. **Place Orders**: Navigate to the main dashboard and access the ordering menu. Enter the quantity of products desired and select the preferred payment method.
    
-3. **View Order Status**: Check the status of orders in the "Order History" section on the main dashboard.
+3. **View Order Status**: Check the status of orders in the "Riwayat Pemesanan" section on the main dashboard.
 
 ### Admin Dashboard Credentials
 
