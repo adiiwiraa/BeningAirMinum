@@ -22,6 +22,13 @@ You can run the application using Android Studio and an Android emulator. Altern
    
 3. **View Order Status**: Check the status of orders in the "Order History" section on the main dashboard.
 
+### Admin Dashboard Credentials
+
+To access the admin dashboard, use the following credentials:
+
+- **Email**: admin1@waterdepot.com
+- **Password**: admin1234
+
 ## Screenshots
 
 ![Screenshot 1](app/src/main/res/drawable/app_screenshot1.png)
@@ -37,4 +44,4 @@ You can run the application using Android Studio and an Android emulator. Altern
 - Andreas Aji Raninda
 - Nayandra Agastia Putra
 - Rizky Suryasyah
-- Muhammad Adi Wira (you)
+- Muhammad Adi Wira Kusuma
