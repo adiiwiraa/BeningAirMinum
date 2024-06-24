@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".activities.PengirimanActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/back"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="Pengiriman"
+                    android:textColor="#FF000000"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="24dp"
+                android:textColor="#FF000000"
+                android:text="@string/detailpemesanan" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/nama" />
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:text="@string/content_specs_Nama" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="@string/email" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Email" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="@string/alamat" />
+
+                    <TextView
+                        android:id="@+id/tv_alamat"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Alamat"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="Produk: " />
+
+                    <TextView
+                        android:id="@+id/tv_produk"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="Air Gelas"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="Harga Satuan: " />
+
+                    <TextView
+                        android:id="@+id/tv_harga_satuan"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="Rp4.000,-"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="@string/jumlah" />
+
+                    <TextView
+                        android:id="@+id/tv_jumlah"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Jumlah"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="Metode Pembayaran: " />
+
+                    <TextView
+                        android:id="@+id/tv_metode_pembayaran"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Jumlah"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="Dipesan Pada: " />
+
+                    <TextView
+                        android:id="@+id/tv_waktu_pesan"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Jumlah"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_text_waktu_selesai"
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="Waktu Selesai: " />
+
+                    <TextView
+                        android:id="@+id/tv_waktu_selesai"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Jumlah"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                style="@style/TextContent.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#FF000000"
+                android:text="@string/detailpengiriman"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="16dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/nomorpemesanan" />
+
+                    <TextView
+                        android:id="@+id/tv_kode_pesanan"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:text="@string/content_specs_Nomor" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="@string/driver" />
+
+                    <TextView
+                        android:id="@+id/tv_driver"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_NamaDriver" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="@string/status" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        style="@style/TextSpec.Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="@string/content_specs_Status"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_qr"
+                style="@style/TextContent.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#FF000000"
+                android:text="QR Pembayaran: "/>
+
+
+            <ImageView
+                android:id="@+id/iv_qr"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bening_qr"
+                android:layout_marginBottom="16dp"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#FF000000"
+                    android:text="@string/totalbayar"/>
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    style="@style/TextSpec.Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#FF000000"
+                    android:text="@string/content_specs_Total"/>
+            </TableRow>
+
+            <Button
+                style="@style/button_rounded"
+                android:id="@+id/btn_terima"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Selesaikan Pesanan" />
+
+            <Button
+                style="@style/button_rounded"
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Batalkan Pesanan" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

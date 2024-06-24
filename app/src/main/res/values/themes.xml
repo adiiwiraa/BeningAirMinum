@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Testing" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorSecondary">@color/my_secondary</item>
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Testing" parent="Base.Theme.Testing" />
+
+    <style name="texteditprofile">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="buttonprofile">
+        <item name="android:backgroundTint">@color/my_secondary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+    <style name="TextContent">
+        <item
+            name="android:layout_width">wrap_content</item>
+        <item
+            name="android:layout_height">wrap_content</item>
+        <item
+            name="android:layout_marginLeft">16dp</item>
+        <item
+            name="android:layout_marginRight">16dp</item>
+    </style>
+    <style name="button_rounded">
+        <item name="android:backgroundTint">@color/my_secondary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+    <style name="button_sq">
+        <item name="android:backgroundTint">@color/my_secondary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="textbold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextContent.Small">
+        <item
+            name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="TextContent.Small.White">
+        <item
+            name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextContent.Subtitle">
+        <item
+            name="android:textColor">@color/colorSubtitle</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextSpec">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSpec.Field">
+        <item
+            name="android:layout_width">wrap_content</item>
+        <item
+            name="android:layout_height">wrap_content</item>
+        <item
+            name="android:layout_marginRight">16dp</item>
+        <item
+            name="android:textColor">@color/colorSubtitle</item>
+
+    </style>
+
+    <style name="TextSpec.Value">
+
+        <item
+            name="android:layout_width">match_parent</item>
+        <item
+            name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item
+            name="android:textColor">@color/black</item>
+    </style>
+</resources>

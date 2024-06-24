@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="@color/my_secondary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/transparent"
+                >
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/white_banner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:src="@drawable/logo_bening"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/home_banner"
+                android:padding="5dp"
+                android:layout_marginTop="15sp"
+                />
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Segarkan hidup, di saat terbaik!, nikmati pelayanan air minum terbaik bersama kami!"
+                />
+
+            <Button
+                android:id="@+id/btn_pesan_galon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#fff"
+                android:text="Pesan Air Minum!"
+                android:textAllCaps="false"
+                android:textColor="@color/my_secondary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="0dp">
+
+            </Button>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:layout_gravity="center_horizontal"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_profile_move"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#fff"
+                        android:drawableTop="@drawable/baseline_person_30"
+                        android:padding="20dp"
+                        android:text="Profil"
+                        android:textAllCaps="false"
+                        android:textColor="@color/my_secondary"
+                        app:cornerRadius="0dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <Button
+                        android:id="@+id/btn_history_move"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Riwayat Pemesanan"
+                        android:textAllCaps="false"
+                        android:textColor="@color/my_secondary"
+                        android:drawableTop="@drawable/baseline_history_30"
+                        android:backgroundTint="#fff"
+                        android:padding="20dp"
+                        app:cornerRadius="0dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

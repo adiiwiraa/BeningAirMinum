@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water"
+    tools:context=".activities.EditStaffActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_primary"
+        android:alpha="0.35"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:layout_marginTop="90dp">
+
+        <ImageView
+            android:id="@+id/icon_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/water_icon"/>
+
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bening Air Minum"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="32sp"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/tvNamaStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Staff"
+                android:textColor="@color/my_primary"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvJabatanStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Jabatan"
+                android:alpha="0.7"/>
+
+            <TextView
+                android:id="@+id/tvIdStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Id Staff"
+                android:alpha="0.7"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="36dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/baseline_account_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/colorSubtitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icon_edit"
+                    app:layout_constraintTop_toTopOf="@id/civ_edit"
+                    app:layout_constraintStart_toStartOf="@id/civ_edit"
+                    app:layout_constraintBottom_toBottomOf="@id/civ_edit"
+                    app:layout_constraintEnd_toEndOf="@id/civ_edit" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_delete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/colorSubtitle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icon_delete"
+                    app:layout_constraintTop_toTopOf="@id/civ_delete"
+                    app:layout_constraintStart_toStartOf="@id/civ_delete"
+                    app:layout_constraintBottom_toBottomOf="@id/civ_delete"
+                    app:layout_constraintEnd_toEndOf="@id/civ_delete" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/etNamaStaff"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:hint="Nama Staff"
+                android:alpha="0.5"/>
+
+            <EditText
+                android:id="@+id/etJabatanStaff"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:hint="Jabatan"
+                android:alpha="0.5"/>
+
+            <EditText
+                android:id="@+id/etEmailStaff"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:hint="Email"
+                android:alpha="0.5"/>
+
+            <EditText
+                android:id="@+id/etTeleponStaff"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:hint="Telepon"
+                android:alpha="0.5"/>
+
+            <EditText
+                android:id="@+id/etPasswordStaff"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:hint="Password"
+                android:alpha="0.5"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Simpan"
+                android:backgroundTint="@color/my_secondary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FFF"
+                app:cornerRadius="32dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

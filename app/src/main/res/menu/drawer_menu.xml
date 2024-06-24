@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard"/>
+
+        <item
+            android:id="@+id/nav_pemesanan"
+            android:icon="@drawable/ic_pemesanan"
+            android:title="Pemesanan"/>
+
+        <item
+            android:id="@+id/nav_add_produk"
+            android:icon="@drawable/ic_add"
+            android:title="Add Produk"/>
+
+        <item
+            android:id="@+id/nav_staff"
+            android:icon="@drawable/ic_staff"
+            android:title="Staff"/>
+
+        <item
+            android:id="@+id/nav_add_staff"
+            android:icon="@drawable/ic_add_staff"
+            android:title="Add Staff"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"/>
+
+
+    </group>
+</menu>

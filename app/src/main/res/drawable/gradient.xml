@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/my_fourth"
+        android:endColor="@color/my_third"
+        android:angle="45" /> <!-- Angle dapat disesuaikan sesuai kebutuhan -->
+    <!-- Menambahkan radius sudut -->
+</shape>

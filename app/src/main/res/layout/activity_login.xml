@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water"
+    tools:context=".activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_primary"
+        android:alpha="0.35"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:layout_marginTop="90dp">
+
+        <ImageView
+            android:id="@+id/icon_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/water_icon"/>
+
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bening Air Minum"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="32sp"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textColor="@color/my_primary"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/please"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Please login with your account"
+                android:alpha="0.7"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"
+                android:hint=" Email Address"
+                android:drawableEnd="@drawable/email"
+                android:alpha="0.5"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:hint=" Password"
+                android:drawableEnd="@drawable/password"
+                android:alpha="0.5"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:backgroundTint="@color/my_secondary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FFF"
+                app:cornerRadius="32dp"/>
+
+            <TextView
+                android:id="@+id/textViewRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun? Daftar di sini"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="25dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

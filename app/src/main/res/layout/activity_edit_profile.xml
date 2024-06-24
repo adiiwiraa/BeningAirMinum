@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/back" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="92dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/baseline_account_circle_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_edit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/colorSubtitle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icon_edit"
+                    app:layout_constraintTop_toTopOf="@id/civ_edit"
+                    app:layout_constraintStart_toStartOf="@id/civ_edit"
+                    app:layout_constraintBottom_toBottomOf="@id/civ_edit"
+                    app:layout_constraintEnd_toEndOf="@id/civ_edit" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_delete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/colorSubtitle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icon_delete"
+                    app:layout_constraintTop_toTopOf="@id/civ_delete"
+                    app:layout_constraintStart_toStartOf="@id/civ_delete"
+                    app:layout_constraintBottom_toBottomOf="@id/civ_delete"
+                    app:layout_constraintEnd_toEndOf="@id/civ_delete" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="16dp">-->
+<!--            <TextView-->
+<!--                style="@style/textbold"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="@string/nama_user" />-->
+<!--        </RelativeLayout>-->
+        <TextView
+            style="@style/texteditprofile"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Edit nama" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edit_nama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext_border"
+                android:hint="Nama User"
+                android:padding="15dp"
+                android:textColorHint="#000"
+                android:alpha="0.5"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            style="@style/texteditprofile"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Edit alamat" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/edit_alamat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext_border"
+                android:hint="Alamat User"
+                android:alpha="0.5"
+                android:padding="15dp"
+                android:textColorHint="#000"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/texteditprofile"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Edit nomor telepon" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/edit_notelp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext_border"
+                android:hint="telp User"
+                android:alpha="0.5"
+                android:padding="15dp"
+                android:inputType="number"
+                android:textColorHint="#000"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            style="@style/texteditprofile"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Edit email" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext_border"
+                android:hint="email User"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:alpha="0.5"
+                android:textColorHint="#000"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                style="@style/TextSpec.Field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginEnd="16dp"
+                android:text="Terakhir Diedit:" />
+
+            <TextView
+                android:id="@+id/tv_waktu_edit"
+                style="@style/TextSpec.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="@string/content_specs_Nomor" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_edit_profile"
+            android:text="@string/simpan"
+            android:layout_marginTop="32dp"
+            app:cornerRadius="32dp"
+            android:layout_marginBottom="48dp"
+            style="@style/buttonprofile"/>
+    </LinearLayout>
+</ScrollView>
